@@ -34,6 +34,7 @@ const Body = () => {
 
     };
 
+    
     const onlineStatus = useOnlineStatus();
 
     if(onlineStatus === false) 
