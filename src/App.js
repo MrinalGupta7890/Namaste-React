@@ -7,7 +7,17 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import Grocery from "./components/Grocery";
 
+
+/**
+ * Chunking             |
+ * Code Splitting       |
+ * Lazy Loading         | {Different words for thing}
+ * Dyanamic Bundling    |
+ * On Demand Loading    |
+ * Dyanamic Import      |
+ */
 
 const AppLayout = () => {
     return (
@@ -34,6 +44,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/contact",
                 element: <Contact/>,
+            },
+            {
+                path: "/grocery",
+                element: <Grocery/>,
             },
             {
                 path: "/restaurant/:resId",
