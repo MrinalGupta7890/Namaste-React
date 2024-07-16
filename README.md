@@ -1,5 +1,5 @@
 # Namaste React
-<<<<<<< HEAD
+<<< HEAD
 =======
 
 
