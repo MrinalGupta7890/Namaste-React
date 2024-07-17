@@ -72,4 +72,18 @@
 # 2 Types of Routing in web apps
     - Client Side Routing
     - Server Side Routing
->>>>>>> d944a06 (Updated Code)
+
+
+
+# Ways of Using CSS
+  
+  - CSS
+  - SCSS
+  - SASS
+  - Styled Component
+  - Using different Libraries and Framework
+    - Tailwind CSS
+    - Bootstrap
+    - Material UI
+    - Chakra UI
+    - Ant Design
