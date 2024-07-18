@@ -13,7 +13,7 @@ const RestaurantCard = (props) => {
     } = resData?.info;
 
     return(
-        <div className="m-4 p-4 w-[240px] rounded-lg" style={styleCard}>
+        <div className="m-4 p-4 w-[240px] rounded-lg" style={{backgroundColor: "#f0f0f0"}}>
             <img 
             className="rounded-lg"
             alt="res-logo"
@@ -27,9 +27,5 @@ const RestaurantCard = (props) => {
         </div>
     )
 };
-
-const styleCard = {
-    backgroundColor: "#f0f0f0"
-}
 
 export default RestaurantCard;
