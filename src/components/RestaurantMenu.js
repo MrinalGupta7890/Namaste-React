@@ -43,6 +43,7 @@ const RestaurantMenu = () => {
                 <RestaurantCategory 
                     key={category?.card?.card.title} 
                     data={category?.card?.card} 
+                    showItems={false}
                 />
             ))}
         </div>
