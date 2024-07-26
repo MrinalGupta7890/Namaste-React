@@ -3,13 +3,6 @@ import ItemList from "./ItemList";
 
 const RestaurantCategory = ({data}) => {
     // console.log(data)
-    const [showItems, setShowItems] = useState(false);
-
-    const handleClick = () => {
-        // console.log("clicked");
-        setShowItems(!showItems);
-    }
-
 
     return (
         <div>
