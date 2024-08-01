@@ -30,7 +30,7 @@ const Body = () => {
         );
 
         const json = await data.json();
-        console.log(json);
+        // console.log(json);
         // Optional Chaining
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -60,22 +60,22 @@ const Body = () => {
                 <div className="m-4 p-4">
                     <input 
                         type="text" 
-                        placeholder="Search" 
-                        className="border border-solid border-black" 
+                        placeholder="Search a restaurant you want..." 
+                        className="px-4 py-2 border-0 border-transparent shadow-md font-medium bg-gray-100 rounded-md focus:border-0 focus:outline-0 w-[300px] placeholder:font-medium focus:border-b-2 focus:border-green-500" 
                         value={searchText} 
                         onChange={(e) => {
                             setSearchText(e.target.value);
                         }} 
                     />
                     <button 
-                        className="px-4 py-1 bg-green-300 m-4 rounded-lg"
+                        className="px-4 py-1 bg-green-300 m-4 rounded-lg shadow-md hover:bg-green-300 duration-[.3s] font-medium"
                         onClick={() => {
                             // Filter the restaurant card and update the UI
                             // SearchText
-                            console.log(searchText);
+                            // console.log(searchText);
 
-                            const filteredRestaurant = listOfRestaurants.filter(
-                                (res) => res.data.name.toLowerCase().includes(searchText.toLowerCase())
+                            const filteredRestaurant = listOfRestaurants.filter((res) => 
+                                res.info.name.toLowerCase().includes(searchText.toLowerCase())
                             );
 
                             setListOfRestaurants(filteredRestaurant);
@@ -92,9 +92,10 @@ const Body = () => {
                         onClick={() => {
                             // filter logic here
                             const filteredList = listOfRestaurants.filter(
-                                (res) => res.data.avgRating > 4
+                                (res) => res.info.avgRating > 4
                             );
                             setFilteredRestaurant(filteredList);
+                            console.log(filteredList);
                         }}
                     >
                         Top Rated Restaurants
@@ -115,11 +116,11 @@ const Body = () => {
                 {
                   filteredRestaurant.map((restaurant) => (
                     <Link 
-                        key={restaurant.info.id} 
-                        to={"/restaurant/" + restaurant.info.id}>
+                        key={restaurant?.info.id} 
+                        to={"/restaurant/" + restaurant?.info.id}>
 
                             {/**If the restaurant is promoted then add a promoted label to it */
-                            restaurant.info.Promoted ? (
+                            restaurant?.info.Promoted ? (
                                 <RestaurantCardPromoted resData={restaurant}/>
                             ) : (
                                 <RestaurantCard resData={restaurant}/>
