@@ -98,9 +98,12 @@
   - Selector
 
 
-# Different Types of Testing a Developer can do
-  - Manual Testing
-  <!-- - Integration Testing
+# Types of Testing a Developer can do
+  - Unit Testing
+  - Integration Testing
+  - End-to-End Testing - e2e testing
+  <!-- - Manual Testing
+  - Automated Testing
   - End-to-End Testing
   - Snapshot Testing
   - UI Testing
