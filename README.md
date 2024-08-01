@@ -96,3 +96,14 @@
   - Slice (cartSlice)
   - dispatch (action)
   - Selector
+
+
+# Different Types of Testing a Developer can do
+  - Manual Testing
+  <!-- - Integration Testing
+  - End-to-End Testing
+  - Snapshot Testing
+  - UI Testing
+  - API Testing
+  - Security Testing
+  - Performance Testing -->
