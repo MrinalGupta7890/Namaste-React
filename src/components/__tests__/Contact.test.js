@@ -3,8 +3,10 @@ import Contact from "../Contact";
 import "@testing-library/jest-dom";
 
 
+
+// test and it both are same
 describe("Contact Us page test cases", () => {
-    test("Should load contact us component", () => {
+    it("Should load contact us component", () => {
         render(<Contact/>);
     
         const heading = screen.getByRole("heading");
@@ -14,7 +16,7 @@ describe("Contact Us page test cases", () => {
     });
     
     
-    test("Should load button inside contact component", () => {
+    it("Should load button inside contact component", () => {
         render(<Contact/>);
     
         const button = screen.getByText("Submit");
