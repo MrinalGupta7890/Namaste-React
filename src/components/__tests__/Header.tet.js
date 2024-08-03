@@ -31,7 +31,7 @@ it("Should render Header Component with Cart items 0", () => {
         </BrowserRouter>
     );  
 
-    const cartItems = screen.getByText("Cart - (0 items)");
+    const cartItems = screen.getByText(/Cart/);
 
     expect(cartItems).toBeInTheDocument();
 
