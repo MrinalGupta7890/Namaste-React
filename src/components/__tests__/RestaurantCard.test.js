@@ -13,3 +13,9 @@ it("should render RestaurantCard component with props data", () => {
 
     expect(name).toBeInTheDocument();
 });
+
+
+it("should render RestaurantCard component with Promoted Label", () => {
+
+    // test HOC : withPromotedLabel()
+});
