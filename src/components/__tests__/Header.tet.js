@@ -19,4 +19,20 @@ it("Should render Header Component with a login button", () => {
 
     expect(loginButton).toBeInTheDocument();
 
+});
+
+
+it("Should render Header Component with Cart items 0", () => {
+    render(
+        <BrowserRouter>
+            <Provider store={appStore}>
+                <Header/>
+            </Provider>
+        </BrowserRouter>
+    );  
+
+    const cartItems = screen.getByText("Cart - (0 items)");
+
+    expect(cartItems).toBeInTheDocument();
+
 })
