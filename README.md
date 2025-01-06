@@ -122,3 +122,52 @@
   - Install @babel/preset-react library - to make JSX work in test cases
   - Include @babel/preset-react inside my babel config
   - Install @testing-library/jest-dom library
+
+
+# Project Directory Structure
+
+```plaintext
+└── MrinalGupta7890-Namaste-React/
+    ├── README.md
+    ├── babel.config.js
+    ├── index.css
+    ├── index.html
+    ├── jest.config.js
+    ├── package.json
+    ├── tailwind.config.js
+    ├── .parcelrc
+    ├── .postcssrc
+    └── src/
+        ├── App.js
+        ├── components/
+        │   ├── About.js
+        │   ├── Body.js
+        │   ├── Cart.js
+        │   ├── Contact.js
+        │   ├── Error.js
+        │   ├── Grocery.js
+        │   ├── Header.js
+        │   ├── ItemList.js
+        │   ├── RestaurantCard.js
+        │   ├── RestaurantCategory.js
+        │   ├── RestaurantMenu.js
+        │   ├── User.js
+        │   ├── UserClass.js
+        │   ├── shimmer.js
+        │   ├── sum.js
+        │   ├── __tests__/
+        │   │   ├── Contact.test.js
+        │   │   ├── Header.tet.js
+        │   │   ├── RestaurantCard.test.js
+        │   │   └── sum.test.js
+        │   └── mocks/
+        │       └── resCardMock.json
+        └── utils/
+            ├── UserContext.js
+            ├── appStore.js
+            ├── cartSlice.js
+            ├── constants.js
+            ├── mockData.js
+            ├── useOnlineStatus.js
+            └── useRestaurantMenu.js
+
